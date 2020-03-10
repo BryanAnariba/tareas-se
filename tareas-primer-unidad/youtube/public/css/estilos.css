@@ -1,0 +1,43 @@
+.btn .btn-outline-light {
+    background-color: rgb(205,205,205);
+    color: black;
+}
+#search {
+    width: 500px;
+}
+#barra-navegacion
+{
+    background-color: #FFFFFF
+}
+body {
+    background-color: rgb(245,245,245);
+}
+.card {
+    background-color: rgb(230,230,230);
+}
+#titulo-video {
+    position: absolute;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+#titulo-footer {
+    color: rgb(150,150,150);
+}
+
+.danger {
+    border-bottom: 2px solid red;
+}
+
+.success {
+    border-bottom: 2px solid transparent;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color:none;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
