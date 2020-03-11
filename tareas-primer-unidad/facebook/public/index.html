@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/facebook.png" type="image/x-icon">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><h2 class="text-white font-weight-bolder">Facebook</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input id="firstname" class="form-control mr-sm-2" type="search" placeholder="Nombres">
+                <input id="lastname" class="form-control mr-sm-2" type="search" placeholder="Apellidos">
+                <button id="btn-search" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="insertarUsuario()">Guardar Usuario</button>
+              </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="post-facebook" class="row mt-5">
+            
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/facebook-controller.js"></script>
+</body>
+</html>

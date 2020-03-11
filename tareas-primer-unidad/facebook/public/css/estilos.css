@@ -1,0 +1,23 @@
+nav {
+    background-color: #3C5998;
+}
+
+#btn-search {
+    background-color: rgb(42, 67, 121) !important;
+    color: #fff;
+    border: none;
+}
+#btn-search:hover {
+    background-color: #fff !important;
+    color: rgb(42, 67, 121);
+}
+
+body {
+    background-color: #DFE3EE;
+}
+
+#btn-save-post {
+    background-color: rgb(42, 67, 121) !important;
+    color: #fff;
+    border: none;
+}
