@@ -83,21 +83,21 @@ listarCanales();
 // Configuracion de listar canales ya almacenados en la base de datos localstorage
 function listarPostGuardados () {
     document.getElementById('mostrar-videos').innerHTML = '';
-    for (let cosa=0; cosa<postVideos.length; cosa++) {
+    for (let i=0; i<postVideos.length; i++) {
         document.getElementById('mostrar-videos').innerHTML += `
         <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
             <div class="body mt-3">
-                <p id="titulo-video" class="text-white">${ postVideos[cosa].titulo } <br>    
-                    <span class="bg-dark text-white pl-2 pr-2">${ postVideos[cosa].duracion }</span>
+                <p id="titulo-video" class="text-white">${ postVideos[i].titulo } <br>    
+                    <span class="bg-dark text-white pl-2 pr-2">${ postVideos[i].duracion }</span>
                 </p>
-                <img src="/${postVideos[cosa].urlCaratula}" class="img-fluid">
+                <img src="/${postVideos[i].urlCaratula}" class="img-fluid">
                 <p class="font-weight-bold">
-                    ${ postVideos[cosa].titulo }
+                    ${ postVideos[i].titulo }
                 </p>
                 <p id="titulo-footer" class="text-gray"> 
-                    ${ postVideos[cosa].canal }
+                    ${ postVideos[i].canal }
                     <br>
-                    ${ postVideos[cosa].visualizaciones } | ${ postVideos[cosa].subido }
+                    ${ postVideos[i].visualizaciones } | ${ postVideos[i].subido }
                 </p>
             </div>
         </div>`;
@@ -127,6 +127,8 @@ function guardarPostVideo () {
     };
 
     postVideos.push(postVideo);
+    postVideos = localStorage.setItem('postVideos',JSON.stringify(postVideos));
+    postVideos = JSON.parse(localStorage.getItem('postVideos'));
     limpiaCasillas();
     listarCanales();
     listarPostGuardados();
