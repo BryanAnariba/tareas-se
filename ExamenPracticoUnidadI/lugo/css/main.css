@@ -12,12 +12,17 @@ h1 , h2 {
 } 
 
 #logo {
+<<<<<<< HEAD
     font-weight: bolder;
+=======
+    font-weight: 1000;
+>>>>>>> 7976e8fc4826da768a45a6c6608c4318ae72532b
 }
 
 
 #selecciona-usuario {
     border-radius: 15px;
+<<<<<<< HEAD
     color: #563D7C;
     font-size: 18px;
     font-weight: 600;
@@ -77,4 +82,6 @@ h1 , h2 {
 #card-item:hover {
     background: #FFCC00 !important;
     cursor: pointer;
+=======
+>>>>>>> 7976e8fc4826da768a45a6c6608c4318ae72532b
 }
